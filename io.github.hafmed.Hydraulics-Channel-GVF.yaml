@@ -1,20 +1,17 @@
-    app-id: io.github.hafmed.Hydraulics-Channel-GVF
-    runtime: org.kde.Platform
-    runtime-version: "6.9"
-    sdk: org.kde.Sdk
-    command: hydraulics_channel_gvf
-    finish-args:
-        - --share=ipc
-        - --socket=fallback-x11
-        - --socket=wayland
-        - --device=dri
-    modules:
-      - name: hydraulics_channel_gvf
-        buildsystem: cmake-ninja
-        sources:
-          - type: archive
-            url: https://github.com/hafmed/Hydraulics-Channel-GVF/archive/refs/tags/v4.5.9-release5.tar.gz
-            sha256: ba9536db380f7d28195af37b56c90e975820b23aeca245778ce00d71b6fdff48
-
-
-
+app-id: io.github.hafmed.Hydraulics-Channel-GVF
+runtime: org.kde.Platform
+runtime-version: "6.10"
+sdk: org.kde.Sdk
+command: hydraulics_channel_gvf
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+modules:
+  - name: hydraulics_channel_gvf
+    buildsystem: cmake-ninja
+    sources:
+      - type: archive
+        url: https://github.com/hafmed/Hydraulics-Channel-GVF/archive/refs/tags/v4.5.9-release5.tar.gz
+        sha256: ba9536db380f7d28195af37b56c90e975820b23aeca245778ce00d71b6fdff48
